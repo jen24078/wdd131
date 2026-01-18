@@ -60,3 +60,15 @@ p {
 	display: block;
 	margin: 0 auto;
 }
+
+#theme-select {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
