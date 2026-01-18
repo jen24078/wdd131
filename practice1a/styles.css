@@ -49,3 +49,8 @@ img {
 	margin-bottom: 10px;
     line-height: 1.1;
 }
+
+#webdevlist {
+	display: block;
+	align-items: left;
+}
