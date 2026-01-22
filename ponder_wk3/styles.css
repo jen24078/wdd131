@@ -2,9 +2,7 @@
 
 body {
 	font-family: Roboto, sans-serif;
-	margin: 0;
 }
-
 header,
 main,
 footer {
@@ -14,37 +12,29 @@ footer {
 	padding: 1rem;
 	background-color: lightblue;
 }
-
-header {
-	display: flex;
-	align-items: center;
-}
-
 h1 {
-	margin: 0 auto;
-	font-size: 1.5rem;
 	text-align: center;
 }
-
-nav a {
-	display: none;
-	padding: 0.5rem;
-	color: black;
-	text-decoration: none;
+section {
+	padding: 20px;
+	background-color: white;
+	margin: 1em;
+	border: 1px solid #ccc;
 }
-
+nav a {
+	padding: 20px;
+	color: black;
+	display: none;
+}
 nav a:hover {
+	text-decoration: none;
 	color: #616061;
 }
-
 .menu-btn {
 	cursor: pointer;
 	border: none;
 	background-color: transparent;
-	display: block;
-	margin-right: auto;
 }
-
 .bar1,
 .bar2,
 .bar3 {
@@ -53,21 +43,8 @@ nav a:hover {
 	background-color: black;
 	margin: 5px 0;
 }
-
-main {
-	display: block;
-}
-
-section {
-	padding: 1rem;
-	background-color: white;
-	margin: 0.5rem;
-	border: 1px solid #ccc;
-}
-
 footer {
-	text-align: left;
-	font-size: 0.9rem;
+	text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -76,12 +53,13 @@ footer {
 	}
 
 	nav {
-		margin-left: auto;
+		display: flex;
+		justify-content: flex-end;
+		gap: 1rem;
 	}
 
 	nav a {
 		display: inline-block;
-		margin-left: 1rem;
 	}
 
 	main {
@@ -91,22 +69,29 @@ footer {
 	}
 
 	section {
+		margin: 0;
 		padding: 1.5rem;
 	}
 }
 
 @media screen and (min-width: 1024px) {
+	header,
+	main,
+	footer {
+		max-width: 100%;
+	}
+
 	body {
-		font-size: 18px;
+		font-size: 20px;
+	}
+
+	h1 {
+		font-size: 2rem;
 	}
 
 	main {
 		grid-template-columns: repeat(3, 1fr);
 		gap: 1.5rem;
-	}
-
-	nav a {
-		margin-left: 2rem;
 	}
 
 	section {
