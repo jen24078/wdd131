@@ -104,7 +104,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-    
+
     header {
         padding: 30px 0;
     }
@@ -115,7 +115,7 @@ footer {
         text-align: center;
     }
 
-    main {
+    .book-entry {
         display: grid;
         grid-template-columns: 1fr 3fr;
         gap: 60px;
