@@ -83,6 +83,9 @@ header {
 main {
   flex: 1;
   padding: 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .recipe-card {
@@ -112,7 +115,21 @@ main {
   font-size: 0.82rem;
   border-radius: 2px;
   color: black;
+}
+
+.tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
   margin-top: 0.5rem;
+}
+
+.mobile-tags {
+  display: flex;
+}
+
+.desktop-tags {
+  display: none;
 }
 
 .recipe-info {
@@ -149,6 +166,12 @@ main {
   font-size: 0.88rem;
   color: black;
   line-height: 1.5;
+}
+
+.no-results {
+  padding: 1rem;
+  color: #666;
+  font-size: 0.95rem;
 }
 
 footer {
@@ -222,8 +245,13 @@ footer {
     object-fit: cover;
   }
 
-  .recipe-image .tag {
+  .mobile-tags {
     display: none;
+  }
+
+  .desktop-tags {
+    display: flex;
+    margin-top: 0;
   }
 
   .tag-desktop {
@@ -235,7 +263,7 @@ footer {
   }
 
   .recipe-info h2 {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     font-size: 2.5rem;
   }
 
