@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberSafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="nav-logo">
+    <img src="images/logo.jpg" alt="CyberSafe Logo Icon" class="nav-logo-icon">
+    <span>CyberSafe</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="site-plan.html" class="nav-link">Site Plan</a>
+  </div>
+</nav>
+
+  <main class="main-content">
+    <div class="hero">
+      <img src="images/hero.png" alt="Hero Image">
+      <div class="hero-content">
+        <h1 class="hero-title">Stay safe<br>online, starting<br>with the basics</h1>
+      </div>
+    </div>
+
+    <div class="info-header">
+      <p class="section-title">Common Threats</p>
+      <h2 class="section-subtitle">Learn the Basics</h2>
+      <div class="select-wrap">
+        <select class="topic-select" id="topicSelect">
+          <option value="phishing-attacks">Phishing Attacks</option>
+          <option value="malware">Malware</option>
+          <option value="password-security">Password Security</option>
+          <option value="public-wifi">Public Wifi</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="info-body">
+      <div id="topicOutput"></div>
+    </div>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
